@@ -9,10 +9,10 @@ const overlay = document.querySelector('.overlay');
 /* Looping through images */
 for ( let i = 1; i <=5 ; i++) {
 const newImage = document.createElement('img');
-newImage.setAttribute('src', "images/pic1.jpg" + i + ".jpg");
+newImage.setAttribute('src', "images/pic" + i + ".jpg");
 thumbBar.appendChild(newImage);
 newImage.addEventListener("click", function(a) {
-    displayedImage.src = a.src;
+    displayedImage.src = a.target.src;
     });
 }
 
@@ -42,4 +42,3 @@ newImage.addEventListener("click", function(a) {
 
 
 
-  
