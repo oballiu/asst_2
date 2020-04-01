@@ -20,16 +20,16 @@ newImage.addEventListener("click", function(a) {
 
 
   function darken_lighten () {
-    const BtnAttribute = document.getElementsByClassName("button").getAttribute("class");
+    const BtnAttribute = btn.getAttribute("class");
      if (BtnAttribute === "dark" ){
-        btn.setAttribute("class","dark");
+        btn.setAttribute("class","light");
         btn.textContent = "Lighten";
-        overlay.style.backgroundColor = rgba(0,0,0,0.5);
+        overlay.style.backgroundColor = "rgba(0,0,0,0.5)";
      }
      else {
-        btn.setAttribute("class","light");
+        btn.setAttribute("class","dark");
         btn.textContent = "Darken";
-        overlay.style.backgroundColor = rgba(0,0,0,0);
+        overlay.style.backgroundColor = "rgba(0,0,0,0)";
 
      }     
 
@@ -38,3 +38,8 @@ newImage.addEventListener("click", function(a) {
   btn.addEventListener("click", function() {
     darken_lighten();
   });
+
+
+
+
+  
